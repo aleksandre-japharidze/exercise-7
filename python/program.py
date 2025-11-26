@@ -69,6 +69,8 @@ class ShoppingCart:
         total = 0
         for product in self.__products:
             total += product.final_price()
+        if self.__customer is not None and self.__customer.has_premium:
+            total = total * 0.9
         return total
     
 
