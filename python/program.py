@@ -27,8 +27,6 @@ class Electronics(Product):
     def final_price(self):
         return self.base_price + self.base_price * 0.18
 
-products = []
-
 class ShoppingCart:
     def __init__(self, products=None, customer=None):
         self.__products = products if products is not None else []
